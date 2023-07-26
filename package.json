@@ -4,7 +4,8 @@
   "description": "API for the game which list of information of the player",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",

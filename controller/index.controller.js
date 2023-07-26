@@ -1,6 +1,5 @@
 const path = require('path');
 const fs = require('fs');
-// Route to get the number of levels and game metadata
 
 const gameMetadata = path.join(__dirname, '../database/game.json');
 
@@ -78,6 +77,7 @@ const insertUserJSON = (req, res) => {
     userData[userId] = {
       age,
       email,
+      username,
       playedGames: [],
       achievedLevels: {},
       levelRates: {},
