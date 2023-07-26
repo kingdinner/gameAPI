@@ -35,6 +35,8 @@ GET /api/user/:userId: Retrieve game progress for a specific user.
 
 POST /api/user: Register a new user or update user information.
 
+POST /api/user/:userid: Register a new user or update user information.
+
 ## Request and Response Examples
 ### Register a New User
 #### Request:
@@ -43,6 +45,38 @@ POST /api/user
   "age": 30,
   "email": "john@example.com",
   "username": "John Doe"
+}
+#### Response:
+{
+  "message": "User data added successfully.",
+  "userId": "john_doe"
+}
+### Update a User
+#### Request:
+POST /api/user/:john_doe
+{
+    "age": 3,
+    "email": "john@example.com",
+    "username": "Johns DoeDs",
+    "playedGames": [
+      "MindQuest: The Puzzle Expedition"
+    ],
+    "achievedLevels": {
+      "MindQuest: The Puzzle Expedition": 3
+    },
+    "levelRates": {
+      "MindQuest: The Puzzle Expedition": {
+        "1": 4,
+        "2": 5,
+        "3": 3
+      }
+    },
+    "achievements": {
+      "MindQuest: The Puzzle Expedition": [
+        "Puzzle Solver",
+        "Speed Runner"
+      ]
+    }
 }
 #### Response:
 {
