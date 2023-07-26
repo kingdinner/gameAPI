@@ -1,0 +1,9 @@
+{
+  "name": "MindQuest: The Puzzle Expedition",
+  "levels": 10,
+  "ageLimitation": 12,
+  "metadata": {
+    "description": "An adventurous puzzle game that challenges your mind.",
+    "version": "1.0"
+  }
+}

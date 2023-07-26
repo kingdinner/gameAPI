@@ -1,0 +1,33 @@
+{
+  "johns_doeds": {
+    "age": 30,
+    "email": "john@example.com",
+    "playedGames": [
+      "MindQuest: The Puzzle Expedition"
+    ],
+    "achievedLevels": {
+      "MindQuest: The Puzzle Expedition": 3
+    },
+    "levelRates": {
+      "MindQuest: The Puzzle Expedition": {
+        "1": 4,
+        "2": 5,
+        "3": 3
+      }
+    },
+    "achievements": {
+      "MindQuest: The Puzzle Expedition": [
+        "Puzzle Solver",
+        "Speed Runner"
+      ]
+    }
+  },
+  "john_doe": {
+    "age": 30,
+    "email": "john.doe@example.com",
+    "playedGames": [],
+    "achievedLevels": {},
+    "levelRates": {},
+    "achievements": {}
+  }
+}
