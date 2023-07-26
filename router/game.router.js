@@ -5,6 +5,6 @@ const {gameInformation, gameAgeVerication} = require('../controller/index.contro
 
 router.get('/game', gameInformation)
 
-router.post('/game/allow', gameAgeVerication);
+router.post('/game/allow/:userId', gameAgeVerication);
 
 module.exports = router;

@@ -24,10 +24,6 @@
   },
   "john_doe": {
     "age": 30,
-    "email": "john.doe@example.com",
-    "playedGames": [],
-    "achievedLevels": {},
-    "levelRates": {},
-    "achievements": {}
+    "email": "john.doe@example.com"
   }
 }

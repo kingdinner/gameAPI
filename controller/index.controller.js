@@ -24,13 +24,14 @@ const readGameData = () => {
 };
 
 const gameAgeVerication = (req, res) => {
+    const { userId } = req.params;
     const gameData = readGameData();
     const userData = readUserData();
     const userProgress = userData[userId]
     if (gameData.ageLimitation > userProgress.age) {
-        res.status(403).json({ message: 'Age is not valid yet. Please try other game for the meantime' });
+        res.status(403).json({ message: "You're not allowed to play this game." });
     } else {
-      res.status(200).json({ allowedLevels });
+      res.status(200).json(userData[userId]);
     }
 }
  
