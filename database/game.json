@@ -15,5 +15,13 @@
       "description": "Elementary game with you play the simple rock, paper, scissor",
       "version": "1.0"
     }
+  },
+  "GuessWord": {
+    "name": "Guess Word",
+    "ageLimitation": 8,
+    "metadata": {
+      "description": "Elementary game with you play the guess word",
+      "version": "1.0"
+    }
   }
 }

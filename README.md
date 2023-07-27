@@ -42,7 +42,7 @@ POST /api/user/:userid: Register a new user or update user information.
 ## API Endpoints for RockPaperScissor
 ### Create a New Game
 #### Request:
-POST URL: /api/rockpaperscissors
+POST URL: /api/game/start/rockpaperscissors
 
 {
   "player1": "john_doe",
@@ -56,7 +56,7 @@ POST URL: /api/rockpaperscissors
 
 ### Status of the game using game id
 #### Request:
-GET /api/rockpaperscissors/:gameId
+GET /api/game/start/rockpaperscissors/:gameId
 
 {
   "players": ["john_doe", "johns_doeds"],
@@ -70,7 +70,7 @@ GET /api/rockpaperscissors/:gameId
 
 ### Make a move
 #### Request:
-POST URL: /api/rockpaperscissors/:gameId/move
+POST URL: /api/game/start/rockpaperscissors/:gameId/move
 
 {
   "player": "john_doe",
@@ -81,6 +81,41 @@ POST URL: /api/rockpaperscissors/:gameId/move
 {
   "message": "Move successful.",
   "gameId": "random_game_id"
+}
+
+## API Endpoints for GuessWord
+### Create a New Game
+#### Request:
+POST URL: /api/game/start/guessword
+
+{
+  "player1": "john_doe",
+  "player2": "johns_doeds"
+}
+
+### Response:
+{
+  "gameId": "random_game_id"
+}
+
+### Create a New Game
+#### Request:
+POST URL: /api/game/start/guessword/:gameId/guess
+
+{
+  "player": "john_doe",
+  "guess": "apple"
+}
+
+### Response:
+{
+  "message": "Congratulations! All players guessed the word correctly."
+}
+
+or
+
+{
+  "message": "Oops! Some players guessed the word incorrectly."
 }
 
 ## Request and Response Examples

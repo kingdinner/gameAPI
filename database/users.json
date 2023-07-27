@@ -21,5 +21,10 @@
         "Speed Runner"
       ]
     }
+  },
+  "john_doe": {
+    "age": 30,
+    "email": "johns.doe@example.com",
+    "username": "john_doe"
   }
 }
