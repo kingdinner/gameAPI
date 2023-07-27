@@ -1,4 +1,4 @@
-# MindQuest API And Rock, Paper, Scissors Multiplayer Game API
+# MindQuest API And Rock, Paper, Scissors, GuessWord Multiplayer Game API
 ##### MindQuest API is a backend application that provides endpoints to manage user data and game information for the MindQuest: The Puzzle Expedition game.
 
 ##### Another API allows two players to play the classic game of Rock, Paper, Scissors. Players can create new games, make moves, and check the status of ongoing games. The game progress is saved in a local JSON file.
