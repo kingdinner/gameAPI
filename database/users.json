@@ -24,6 +24,7 @@
   },
   "john_doe": {
     "age": 30,
-    "email": "john.doe@example.com"
+    "email": "john@example.com",
+    "username": "john_doe"
   }
 }
