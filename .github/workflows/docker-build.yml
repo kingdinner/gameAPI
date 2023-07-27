@@ -3,8 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # Replace 'main' with your main branch name
-  # You can add more triggers here if needed
+      - main
 
 jobs:
   build-and-push:
@@ -29,3 +28,5 @@ jobs:
           DOCKER_IMAGE_TAG: ${{ github.sha }}
         run: |
           docker buildx build -t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_TAG --push .
+
+          
