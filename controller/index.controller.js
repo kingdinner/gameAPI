@@ -5,12 +5,14 @@ const fs = require('fs');
 const gameMetadata = path.join(__dirname, '../database/game.json');
 
 const gameInformation = (req, res) => {
+  const gameNameSelected = req.params
   fs.readFile(gameMetadata, 'utf8', (err, data) => {
     if (err) {
       return res.status(500).json({ error: 'Failed to read game data.' });
     }
     const gameMetadata = JSON.parse(data);
-    res.json(gameMetadata);
+    
+    res.json(gameMetadata[gameNameSelected.game]);
   });
 }
 // helper
@@ -114,5 +116,7 @@ module.exports = {
     getUserInformation,
     insertUserJSON,
     updateUserInformation,
-    gameAgeVerication
+    gameAgeVerication,
+    readUserData,
+    readGameData
 }

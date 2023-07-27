@@ -1,5 +1,7 @@
-# MindQuest API
-MindQuest API is a backend application that provides endpoints to manage user data and game information for the MindQuest: The Puzzle Expedition game.
+# MindQuest API And Rock, Paper, Scissors Multiplayer Game API
+##### MindQuest API is a backend application that provides endpoints to manage user data and game information for the MindQuest: The Puzzle Expedition game.
+
+##### Another API allows two players to play the classic game of Rock, Paper, Scissors. Players can create new games, make moves, and check the status of ongoing games. The game progress is saved in a local JSON file.
 
 ## Getting Started
 To get started with the API, follow the instructions below.
@@ -35,6 +37,52 @@ GET /api/user/:userId: Retrieve game progress for a specific user.
 
 POST /api/user: Register a new user or update user information.
 
+POST /api/user/:userid: Register a new user or update user information.
+
+## API Endpoints for RockPaperScissor
+### Create a New Game
+#### Request:
+POST URL: /api/rockpaperscissors
+
+{
+  "player1": "john_doe",
+  "player2": "johns_doeds"
+}
+
+### Response:
+{
+  "gameId": "random_game_id"
+}
+
+### Status of the game using game id
+#### Request:
+GET /api/rockpaperscissors/:gameId
+
+{
+  "players": ["john_doe", "johns_doeds"],
+  "moves": {
+    "john_doe": "Rock",
+    "johns_doeds": "Paper"
+  },
+  "status": "completed",
+  "result": "johns_doeds"
+}
+
+### Make a move
+#### Request:
+POST URL: /api/rockpaperscissors/:gameId/move
+
+{
+  "player": "john_doe",
+  "move": "Rock"
+}
+
+### Response:
+{
+  "message": "Move successful.",
+  "gameId": "random_game_id"
+}
+
 ## Request and Response Examples
 ### Register a New User
 #### Request:
@@ -43,6 +91,38 @@ POST /api/user
   "age": 30,
   "email": "john@example.com",
   "username": "John Doe"
+}
+#### Response:
+{
+  "message": "User data added successfully.",
+  "userId": "john_doe"
+}
+### Update a User
+#### Request:
+POST /api/user/:john_doe
+{
+    "age": 3,
+    "email": "john@example.com",
+    "username": "Johns DoeDs",
+    "playedGames": [
+      "MindQuest: The Puzzle Expedition"
+    ],
+    "achievedLevels": {
+      "MindQuest: The Puzzle Expedition": 3
+    },
+    "levelRates": {
+      "MindQuest: The Puzzle Expedition": {
+        "1": 4,
+        "2": 5,
+        "3": 3
+      }
+    },
+    "achievements": {
+      "MindQuest: The Puzzle Expedition": [
+        "Puzzle Solver",
+        "Speed Runner"
+      ]
+    }
 }
 #### Response:
 {
