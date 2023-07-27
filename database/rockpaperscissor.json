@@ -1,82 +1,12 @@
 {
-  "3radcrv54": {
+  "random_game_id": {
     "players": [
       "john_doe",
       "johns_doeds"
     ],
     "moves": {
-      "john_doe": "Rock",
-      "johns_doeds": "paper"
+      "john_doe": "Rock"
     },
-    "status": "completed",
-    "result": "draw"
-  },
-  "tmy454pvm": {
-    "players": [
-      "john_doe",
-      "johns_doeds"
-    ],
-    "moves": {
-      "john_doe": "Rock",
-      "johns_doeds": "Paper"
-    },
-    "status": "completed",
-    "result": "johns_doeds"
-  },
-  "srif8x1j2": {
-    "players": [
-      "john_doe",
-      "johns_doeds"
-    ],
-    "moves": {},
-    "status": "ongoing"
-  },
-  "3flacudwz": {
-    "players": [
-      "john_doe",
-      "johns_doeds"
-    ],
-    "moves": {},
-    "status": "ongoing"
-  },
-  "6jk2tpbyh": {
-    "players": [
-      "john_doe",
-      "johns_do"
-    ],
-    "moves": {},
-    "status": "ongoing"
-  },
-  "76fm5infh": {
-    "players": [
-      "john_doe",
-      "johns_do"
-    ],
-    "moves": {},
-    "status": "ongoing"
-  },
-  "1uy7dee2g": {
-    "players": [
-      "john_doe",
-      "johns_do"
-    ],
-    "moves": {},
-    "status": "ongoing"
-  },
-  "jr6nc48k5": {
-    "players": [
-      "john_doe",
-      "johns_do"
-    ],
-    "moves": {},
-    "status": "ongoing"
-  },
-  "vv2jostmw": {
-    "players": [
-      "john_doe",
-      "johns_doeds"
-    ],
-    "moves": {},
     "status": "ongoing"
   }
 }

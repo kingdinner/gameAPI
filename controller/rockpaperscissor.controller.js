@@ -26,12 +26,6 @@ const writeGamesData = (gamesData) => {
   }
 };
 
-// Helper function to generate a random choice (Rock, Paper, or Scissors)
-const getRandomChoice = () => {
-  const choices = ['Rock', 'Paper', 'Scissors'];
-  return choices[Math.floor(Math.random() * choices.length)];
-};
-
 // Route handler to create a new Rock, Paper, Scissors game
 const createGame = (req, res) => {
   const gameId = Math.random().toString(36).substr(2, 9); // Generate a random game ID

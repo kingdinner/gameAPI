@@ -17,5 +17,4 @@ router.get('/game/start/rockpaperscissor/:gameId', getGameStatus);
 // Route to make a move in the Rock, Paper, Scissors game
 router.post('/game/start/rockpaperscissor/:gameId/move', makeMove);
 
-
 module.exports = router;

@@ -35,7 +35,7 @@ describe('User Routes', () => {
       .post('/api/user')
       .send({
         age: 30,
-        email: 'john@example.com',
+        email: 'johns.doe@example.com',
       })
       .expect(400);
   });
@@ -45,7 +45,7 @@ describe('User Routes', () => {
       .post('/api/user')
       .send({
         age: 30,
-        email: 'john.doe@example.com',
+        email: 'johns.doe@example.com',
         username: 'John Doe',
       })
       .expect(409);
@@ -55,6 +55,6 @@ describe('User Routes', () => {
     const response = await request(app).get('/api/user/john_doe').expect(200);
 
     expect(response.body).toHaveProperty('age', 30);
-    expect(response.body).toHaveProperty('email', 'john.doe@example.com');
+    expect(response.body).toHaveProperty('email', 'johns.doe@example.com');
   });
 });
