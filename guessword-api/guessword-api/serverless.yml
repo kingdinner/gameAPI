@@ -1,0 +1,14 @@
+service: guessword-api
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1  # Change this to your desired AWS region
+
+functions:
+  guessword:
+    handler: handler.guessword
+    events:
+      - http:
+          path: guessword
+          method: any
